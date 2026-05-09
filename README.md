@@ -2,7 +2,6 @@
 
 Backend API for the iExperts Learning Platform built with ASP.NET Core 8.
 
-
 ## 📂 Project Structure
 
 ```
@@ -27,17 +26,21 @@ iExpertsLearningPlatform/
 │   ├── Program.cs                 # App bootstrap + DI
 │   └── appsettings.json
 │
+```
+
+---
 
 ## 🚀 Technologies Used
 
 - ASP.NET Core 8
 - Entity Framework Core
 - InMemory Database
-- Swagger
+- Swagger / OpenAPI
 - RESTful API
 - Dependency Injection
 - CORS Configuration
 
+---
 
 ## ⚙️ Features
 
@@ -53,9 +56,19 @@ iExpertsLearningPlatform/
 
 ---
 
+## 🧪 API Endpoints
+
+| Method | Endpoint       | Description      |
+|--------|----------------|------------------|
+| POST   | /api/contact   | Create message   |
+| GET    | /api/contact   | Get all messages |
+
+---
+
 ## ▶️ Getting Started
 
 ### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/morcosshehata9/iExpertLearningPlatform-Backend.git
+cd iExpertLearningPlatform-Backend
