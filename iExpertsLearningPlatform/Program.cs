@@ -12,8 +12,8 @@ builder.Services.AddSwaggerGen();
 
 // InMemory Database (swap with UseSqlServer for production)
 builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-// opt.UseInMemoryDatabase("iExpertsDb"));                    --> If you want to switch to Memory
+   // opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));            // --> If you want to connect to database, don't forget to change the connection string
+    opt.UseInMemoryDatabase("iExpertsDb"));                    //--> If you want to switch to Memory
 
 // Dependency Injection
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
